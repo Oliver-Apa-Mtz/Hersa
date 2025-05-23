@@ -1,0 +1,121 @@
+.property{
+	max-width: 433px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.property__image__container{
+	overflow: hidden;
+	position: relative;
+}
+.property:hover .property__image {
+	transform: scale(1.2);
+	/* Zoom in */
+}
+.property__image{
+	background-size: cover;
+	background-position: center;
+	min-height: 433px;
+	transition: transform 1s ease;
+}
+.property__image--small{
+	min-height: 300px !important;
+}
+.property__type{
+	min-width: 145px;
+	padding: 0 10px;
+	background-color: #FAEDE5;
+	left: 0;
+	top: 40px;
+	font-family: 'Fahkwang Bold', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+.property__price{
+	width: 265px;
+	background-color: #FAEDE5;
+	bottom: -13px;
+	left: calc(50% - 132.5px);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--primary-color);
+	font-weight: 300;
+}
+.property__title{
+	font-family: 'Fahkwang Bold', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	color: var(--primary-color);
+}
+.property__info{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 21px;
+	color: var(--primary-color);
+	font-weight: 300;
+}
+.property__title--custom {
+	font-family: 'Fahkwang Regular', sans-serif;
+	font-size: 28px;
+	line-height: 30px;
+	color: var(--primary-color);
+}
+.property--line{
+	border-right: 1px solid var(--primary-color);
+}
+.banner-detail{
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+}
+.banner-detail__text{
+	max-width: 940px;
+}
+.banner-datail-info{
+	background-image: url('../assets/img/line-effect-3.webp');
+	background-repeat: repeat-x;
+	background-size: contain;
+	background-position: left center;
+}
+.banner-detail__price{
+	font-family: 'Fahkwang Regular', sans-serif;
+	font-size: 30px;
+	line-height: 62px;
+	color: var(--primary-color);
+}
+.banner-detail__model__item{
+	background-color: #F4EFEB;
+	position: relative;
+	cursor: pointer;
+}
+.banner-detail__model__item:hover{
+	background-color: var(--white);
+}
+.banner-detail__model__item--line::before{
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 50%;
+	top: 25%;
+	right: 0;
+	background-color: #E6E2DE;
+}
+.banner-detail__model__item--active{
+	background-color: var(--white);
+}
+
+@media only screen and (max-width: 1023px) {
+	.banner-datail-info {
+		background-color: var(--bg-footer);
+	}
+}
+@media only screen and (max-width: 639px) {
+	.property{
+		margin: 0 auto;
+	}
+	.property__image{
+		min-height: 350px;
+	}
+}

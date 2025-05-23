@@ -1,0 +1,10 @@
+.footer {
+	padding: 100px 0 50px;
+	background-color: var(--bg-footer);
+}
+.footer__title{
+	font-family: "Playfair", serif;
+	font-weight: 300;
+	font-size: 46px;
+	line-height: 49px;
+}
