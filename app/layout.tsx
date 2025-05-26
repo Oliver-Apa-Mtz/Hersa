@@ -32,38 +32,28 @@ import Footer from '../components/Footer';
 import ReduxProvider from '../components/ReduxProvider';
 
 export const metadata: Metadata = {
-	title: 'Strata - Soluciones Inmobiliarias de Alto Valor en Mazatlán, Sinaloa',
-	description: 'Strata, fundada en 2023, ofrece soluciones inmobiliarias innovadoras con más de 10 años de experiencia en la comercialización de proyectos exclusivos y administración de propiedades vacacionales en Mazatlán.',
+	title: 'Hersa - Construyendo historias en un lugar donde los sueños y la realidad se fusionan.',
+	description: 'Hersa, Construyendo historias en un lugar donde los sueños y la realidad se fusionan.',
 
 	openGraph: {
-		title: 'Strata - Soluciones Inmobiliarias de Alto Valor en Mazatlán',
-		description: 'Empresa fundada en 2023, con más de 10 años de experiencia en el sector inmobiliario, ofreciendo proyectos exclusivos y administración de propiedades vacacionales en Mazatlán, Sinaloa.',
-		url: 'https://www.strata.com',
+		title: 'Hersa - Construyendo historias en un lugar donde los sueños y la realidad se fusionan.',
+		description: 'Hersa - Construyendo historias en un lugar donde los sueños y la realidad se fusionan.',
+		url: 'https://www.hersa.com',
 		type: 'website',
 		locale: 'es_MX',
-		siteName: 'Strata Inmobiliaria',
+		siteName: 'Hersa Corporativo',
 		images: [
 			{
-				url: 'https://www.strata.com/img/banner-home.webp',
+				url: 'https://www.hersa.com/img/banner-secondary.png',
 				width: 1200,
 				height: 630,
-				alt: 'Strata - Soluciones Inmobiliarias en Mazatlán',
+				alt: 'Hersa Corporativo',
 			},
 		],
 	},
 
-	twitter: {
-		card: 'summary_large_image',
-		title: 'Strata - Soluciones Inmobiliarias en Mazatlán',
-		description: 'Especialistas en comercialización de proyectos exclusivos y administración de propiedades vacacionales en Mazatlán. Miembros de AMPI.',
-		images: [
-			'https://www.strata.com/img/image-post-1.webp',
-		],
-		site: '@stratainmobiliaria', // Twitter
-	},
-
 	// Keywords
-	keywords: ['Inmobiliaria Mazatlán', 'Soluciones Inmobiliarias', 'Proyectos Exclusivos', 'Propiedades Vacacionales', 'AMPI', 'Inversiones Seguras'],
+	keywords: [],
 
 	// Robots
 	robots: {
@@ -71,8 +61,8 @@ export const metadata: Metadata = {
 		follow: true,
 	},
 
-	creator: 'Strata Inmobiliaria',
-	publisher: 'Strata',
+	creator: 'Hersa Corporativo',
+	publisher: 'Hersa',
 };
 
 export default function RootLayout({
