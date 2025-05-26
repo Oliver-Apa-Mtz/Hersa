@@ -13,7 +13,7 @@ const Proyectos = () => {
 
 	return (
 		<div className='mt-[80px]'>
-			<div className='banner-proyectos w-screen bg-cover bg-center pt-[100px]'>
+			<div className='banner-proyectos w-screen bg-cover bg-center pt-[100px] pb-20'>
 				<div className='home__content'>
 					<div className='w-[690px] mb-20'>
 						<p className='subtitles text-black font-playfair mb-8'>Explora nuestros desarrollos</p>
@@ -21,6 +21,35 @@ const Proyectos = () => {
 							Nuestros proyectos, más que espacios,
 							son escenarios para nuevas historias
 						</h2>
+					</div>
+					<div className="w-full max-w-[1340px] mx-auto px-4 py-6">
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+							<div className="flex flex-col gap-2">
+								<label className="text-info text-black font-poppins'">Tipo de residencia</label>
+								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+									<option>Todos los tipos</option>
+								</select>
+							</div>
+							<div className="flex flex-col gap-2">
+								<label className="text-info text-black font-poppins'">Venta / Renta</label>
+								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+									<option>50,000 - $150,000</option>
+								</select>
+							</div>
+							<div className="flex flex-col gap-2">
+								<label className="text-info text-black font-poppins'">Precio</label>
+								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+									<option>50,000 - $150,000</option>
+								</select>
+							</div>
+							<div className="flex flex-col gap-2">
+								<label className="text-info text-black font-poppins'">Zona</label>
+								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+									<option>Jakarta, Indonesia</option>
+								</select>
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
@@ -114,18 +143,20 @@ const Proyectos = () => {
 				</div>
 			</div>
 
-			<div className='team--custom w-screen'>
+			<div className='team--custom w-screen bg-center'>
 				<div className='home__content'>
-					<div className='w-[750px] mx-auto text-center mb-20'>
+					<div className='w-[630px] mx-auto text-center'>
 						<h2 className='titles text-black uppercase font-playfair'>
 							¡Encuentre su propiedad perfecta ahora!
 						</h2>
+					</div>
+					<div className='w-[800px] mx-auto text-center mb-20'>
 						<p className='subtitles text-black font-playfair mb-8'>
 							Con nuestra atención personalizada explore nuestros listados
 							más recientes y dé el siguiente paso hacia la casa de sus sueños.
 						</p>
 					</div>
-					<div className='w-[660px] mx-auto text-center my-20'>
+					<div className='w-[660px] mx-auto text-center'>
 						<Button text='Ver más' type='primary' position='center' />
 					</div>
 				</div>

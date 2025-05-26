@@ -12,7 +12,7 @@ const Nosotros = () => {
 
 	return (
 		<div className='mt-[80px]'>
-			<div className='banner-history w-screen bg-cover bg-center pt-[100px]'>
+			<div className='banner-history w-screen bg-cover bg-center pt-[100px] pb-20'>
 				<div className='home__content'>
 					<div className='w-[500px] mx-auto text-center mb-20'>
 						<h2 className='titles text-black uppercase font-playfair'>espacios e ideas que perduran en el tiempo</h2>
@@ -107,7 +107,7 @@ const Nosotros = () => {
 							líderes en soluciones arquitectónicas
 						</p>
 					</div>
-					<div className='w-full mx-auto text-center mb-[150px]'>
+					<div className='w-full mx-auto text-center mb-[100px]'>
 						<p className='text-info text-black font-poppins'>
 							Buscamos seguir innovando en nuestros procesos, expandir
 							nuestra presencia a nuevas regiones del país y fortalecer
