@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
 	--white: #ffffff;
 	--primary-color: #223840;
@@ -15,7 +14,7 @@
 }
 
 body {
-	background: var(--white);
+	background: #F6EFE9;
 }
 
 .container{
@@ -33,4 +32,7 @@ body {
 	text-transform: uppercase;
 	padding: 15px 20px;
 	min-width: 250px;
+}
+.button:hover{
+	background-color: #262626;
 }

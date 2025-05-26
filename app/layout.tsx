@@ -1,6 +1,32 @@
 import type { Metadata } from "next";
 import { store } from '../store/store';
 import "./globals.css";
+import localFont from 'next/font/local'
+
+const playfair = localFont({
+	src: './fonts/Playfair-Variable.ttf',
+	display: 'swap',
+	variable: '--font-playfair',
+})
+const poppins = localFont({
+	src: './fonts/Poppins-Regular.ttf',
+	variable: '--font-poppins',
+	weight: '400',
+	display: 'swap',
+})
+const poppinsBold = localFont({
+	src: './fonts/Poppins-ExtraBold.ttf',
+	variable: '--font-poppins-bold',
+	weight: '800',
+	display: 'swap',
+})
+const poppinsLight = localFont({
+	src: './fonts/Poppins-Light.ttf',
+	variable: '--font-poppins-light',
+	weight: '300',
+	display: 'swap',
+})
+
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -56,7 +82,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" className={`${playfair.variable} ${poppins.variable} ${poppinsBold.variable} ${poppinsLight.variable}`}>
 			<body>
 				<Header />
 				<ReduxProvider>

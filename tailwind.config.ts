@@ -13,6 +13,13 @@ const config: Config = {
 				black: "#262626",
 				cream: "#F6EFE9",
 				blue: "#A7B6C5",
+				gray: "#D9D9D9",
+			},
+			fontFamily: {
+				playfair: ["var(--font-playfair)"],
+				poppins: ["var(--font-poppins)"],
+				poppinsBold: ["var(--font-poppins-bold)"],
+				poppinsLight: ["var(--font-poppins-light)"],
 			},
 		},
 	},
