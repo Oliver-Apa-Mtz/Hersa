@@ -4,13 +4,6 @@
 
 :root {
 	--white: #ffffff;
-	--primary-color: #223840;
-	--secondary-color: #4E5B60;
-	--bg-primary: #E5B789;
-	--bg-secondary: #2C4C59;
-	--bg-footer: rgba(248, 230, 218,.45);
-	--custom: #E8D7CC;
-	--gray: #C0C6C6;
 }
 
 body {

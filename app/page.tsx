@@ -20,7 +20,7 @@ export default function Home() {
 
 	return (
 		<div>
-			<div className='home w-screen mt-[80px] pt-[20px] bg-cover bg-center pb-14 relative'>
+			<div className='home w-screen mt-[80px] pt-[40px] bg-cover bg-center pb-14 relative'>
 				<div className='home__content'>
 					<div className='flex justify-center items-center mb-[20px]'>
 						<Image src={Logo} alt="" className='w-[413px]' />

@@ -12,7 +12,7 @@ const Nosotros = () => {
 
 	return (
 		<div className='mt-[80px]'>
-			<div className='banner-history w-screen bg-cover bg-center pt-[100px] pb-20'>
+			<div className='banner-history w-screen bg-cover bg-center pt-[150px] pb-20'>
 				<div className='home__content'>
 					<div className='w-[500px] mx-auto text-center mb-20'>
 						<h2 className='titles text-black uppercase font-playfair'>espacios e ideas que perduran en el tiempo</h2>
@@ -135,9 +135,31 @@ const Nosotros = () => {
 						</p>
 					</div>
 				</div>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 px-10 place-items-center">
+				<div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-16 border-t border-b border-black">
 					<div className='teams__item relative w-[320px]'>
-						<div className='bg-blue w-[255px] h-[300px] mx-auto'></div>
+						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
+						<div className="team__text text-center p-4">
+							<p className="text-info text-black font-poppins">
+								Cargo en la empresa
+							</p>
+							<h3 className="subtitles text-black text-center font-playfair mb-6">
+								Nombre de la persona
+							</h3>
+						</div>
+					</div>
+					<div className='teams__item relative w-[320px] border-l border-black'>
+						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
+						<div className="team__text text-center p-4">
+							<p className="text-info text-black font-poppins">
+								Cargo en la empresa
+							</p>
+							<h3 className="subtitles text-black text-center font-playfair mb-6">
+								Nombre de la persona
+							</h3>
+						</div>
+					</div>
+					<div className='teams__item relative w-[320px] border-r border-l border-black '>
+						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
 						<div className="team__text text-center p-4">
 							<p className="text-info text-black font-poppins">
 								Cargo en la empresa
@@ -148,29 +170,7 @@ const Nosotros = () => {
 						</div>
 					</div>
 					<div className='teams__item relative w-[320px]'>
-						<div className='bg-blue w-[255px] h-[300px] mx-auto'></div>
-						<div className="team__text text-center p-4">
-							<p className="text-info text-black font-poppins">
-								Cargo en la empresa
-							</p>
-							<h3 className="subtitles text-black text-center font-playfair mb-6">
-								Nombre de la persona
-							</h3>
-						</div>
-					</div>
-					<div className='teams__item relative w-[320px]'>
-						<div className='bg-blue w-[255px] h-[300px] mx-auto'></div>
-						<div className="team__text text-center p-4">
-							<p className="text-info text-black font-poppins">
-								Cargo en la empresa
-							</p>
-							<h3 className="subtitles text-black text-center font-playfair mb-6">
-								Nombre de la persona
-							</h3>
-						</div>
-					</div>
-					<div className='teams__item relative w-[320px]'>
-						<div className='bg-blue w-[255px] h-[300px] mx-auto'></div>
+						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
 						<div className="team__text text-center p-4">
 							<p className="text-info text-black font-poppins">
 								Cargo en la empresa

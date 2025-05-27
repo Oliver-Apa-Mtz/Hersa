@@ -46,22 +46,22 @@ const Header = () => {
 				<div className="header__nav">
 					<Link
 						href="/"
-						className={`header__nav__item text-white ${pathname === '/' ? 'active' : ''}`}>
+						className={`header__nav__item text-white font-poppinsLight ${pathname === '/' ? 'active' : ''}`}>
 						Inicio
 					</Link>
 					<Link
 						href="/historia"
-						className={`header__nav__item text-white ${pathname === '/historia' ? 'active' : ''}`}>
+						className={`header__nav__item text-white font-poppinsLight ${pathname === '/historia' ? 'active' : ''}`}>
 						Historia
 					</Link>
 					<Link
 						href="/proyectos"
-						className={`header__nav__item text-white ${pathname === '/proyectos' ? 'active' : ''}`}>
+						className={`header__nav__item text-white font-poppinsLight ${pathname === '/proyectos' ? 'active' : ''}`}>
 						Proyectos
 					</Link>
 					<Link
 						href="/contacto"
-						className={`header__nav__item text-white ${pathname === '/contacto' ? 'active' : ''}`}>
+						className={`header__nav__item text-white font-poppinsLight ${pathname === '/contacto' ? 'active' : ''}`}>
 						Contacto
 					</Link>
 				</div>
@@ -73,25 +73,25 @@ const Header = () => {
 				<div className="header__nav__movil">
 					<Link
 						href="/"
-						className="header__nav__movil__item cursor-pointer w-full p-3 block"
+						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
 						onClick={() => setIsMenuOpen(false)}>
 						Inicio
 					</Link>
 					<Link
 						href="/historia"
-						className="header__nav__movil__item cursor-pointer w-full p-3 block"
+						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
 						onClick={() => setIsMenuOpen(false)}>
 						Historia
 					</Link>
 					<Link
 						href="/proyectos"
-						className="header__nav__movil__item cursor-pointer w-full p-3 block"
+						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
 						onClick={() => setIsMenuOpen(false)}>
 						Proyectos
 					</Link>
 					<Link
 						href="/contacto"
-						className="header__nav__movil__item cursor-pointer w-full p-3 block"
+						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
 						onClick={() => setIsMenuOpen(false)}>
 						Contacto
 					</Link>

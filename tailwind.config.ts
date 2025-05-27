@@ -13,7 +13,7 @@ const config: Config = {
 				black: "#262626",
 				cream: "#F6EFE9",
 				blue: "#A7B6C5",
-				gray: "#D9D9D9",
+				gray: "#C4C4C4",
 			},
 			fontFamily: {
 				playfair: ["var(--font-playfair)"],

@@ -13,7 +13,7 @@ const Proyectos = () => {
 
 	return (
 		<div className='mt-[80px]'>
-			<div className='banner-proyectos w-screen bg-cover bg-center pt-[100px] pb-20'>
+			<div className='banner-proyectos w-screen bg-cover bg-center pt-[150px] pb-20'>
 				<div className='home__content'>
 					<div className='w-[690px] mb-20'>
 						<p className='subtitles text-black font-playfair mb-8'>Explora nuestros desarrollos</p>
@@ -26,25 +26,25 @@ const Proyectos = () => {
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 							<div className="flex flex-col gap-2">
 								<label className="text-info text-black font-poppins'">Tipo de residencia</label>
-								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>Todos los tipos</option>
 								</select>
 							</div>
 							<div className="flex flex-col gap-2">
 								<label className="text-info text-black font-poppins'">Venta / Renta</label>
-								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>50,000 - $150,000</option>
 								</select>
 							</div>
 							<div className="flex flex-col gap-2">
 								<label className="text-info text-black font-poppins'">Precio</label>
-								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>50,000 - $150,000</option>
 								</select>
 							</div>
 							<div className="flex flex-col gap-2">
 								<label className="text-info text-black font-poppins'">Zona</label>
-								<select className="w-full border border-gray rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none">
+								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>Jakarta, Indonesia</option>
 								</select>
 							</div>
