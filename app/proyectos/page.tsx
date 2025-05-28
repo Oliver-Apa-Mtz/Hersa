@@ -15,7 +15,7 @@ const Proyectos = () => {
 		<div className='mt-[80px]'>
 			<div className='banner-proyectos w-screen bg-cover bg-center pt-[150px] pb-20'>
 				<div className='home__content'>
-					<div className='w-[690px] mb-20'>
+					<div className='w-full lg:w-[690px] mb-20'>
 						<p className='subtitles text-black font-playfair mb-8'>Explora nuestros desarrollos</p>
 						<h2 className='titles text-black font-playfair'>
 							Nuestros proyectos, más que espacios,
@@ -55,11 +55,11 @@ const Proyectos = () => {
 			</div>
 
 			<div className='w-screen'>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
+				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-4 md:px-10">
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project1} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
-							<h3 className="subtitles text-black text-center font-playfair mb-6">Arcángel Distrito Residencial</h3>
+						<Image src={Project1} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
+							<h3 className="subtitles text-black text-center font-playfair mb-4">Arcángel Distrito Residencial</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
 								semiprivados, distribuidos en 3 niveles de 50m2, cerca de escuelas,
@@ -71,8 +71,8 @@ const Proyectos = () => {
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project2} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project2} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
@@ -85,8 +85,8 @@ const Proyectos = () => {
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project3} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project3} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
@@ -99,8 +99,8 @@ const Proyectos = () => {
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project4} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project4} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
@@ -113,8 +113,8 @@ const Proyectos = () => {
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project5} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project5} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
@@ -127,8 +127,8 @@ const Proyectos = () => {
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project6} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project6} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
@@ -145,18 +145,18 @@ const Proyectos = () => {
 
 			<div className='team--custom w-screen bg-center'>
 				<div className='home__content'>
-					<div className='w-[630px] mx-auto text-center'>
+					<div className='w-full lg:w-[630px] mx-auto text-center'>
 						<h2 className='titles text-black uppercase font-playfair'>
 							¡Encuentre su propiedad perfecta ahora!
 						</h2>
 					</div>
-					<div className='w-[800px] mx-auto text-center mb-20'>
+					<div className='w-full lg:w-[800px] mx-auto text-center mb-20'>
 						<p className='subtitles text-black font-playfair mb-8'>
 							Con nuestra atención personalizada explore nuestros listados
 							más recientes y dé el siguiente paso hacia la casa de sus sueños.
 						</p>
 					</div>
-					<div className='w-[660px] mx-auto text-center'>
+					<div className='w-full lg:w-[660px] mx-auto text-center'>
 						<Button text='Ver más' type='primary' position='center' />
 					</div>
 				</div>

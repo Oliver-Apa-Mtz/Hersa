@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Logo from '../assets/img/logo.png';
-import IconoMenu from '../assets/img/icono-menu.webp';
+import IconoMenu from '../assets/img/menu.png';
 
 const Header = () => {
 	const pathname = usePathname();
@@ -66,32 +66,32 @@ const Header = () => {
 					</Link>
 				</div>
 				<div className='header__menu text-6xl absolute top-[20px] right-[20px]'>
-					<Image src={IconoMenu} alt="Menu" className='w-[40px] h-max cursor-pointer' onClick={() => setIsMenuOpen(!isMenuOpen)} />
+					<Image src={IconoMenu} alt="Menu" className='w-[40px] h-max cursor-pointer invert' onClick={() => setIsMenuOpen(!isMenuOpen)} />
 				</div>
 			</div>
 			{isMenuOpen && (
 				<div className="header__nav__movil">
 					<Link
 						href="/"
-						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
+						className="header__nav__item__movil font-poppinsLight cursor-pointer w-full bg-blue hover:bg-principal hover:text-white"
 						onClick={() => setIsMenuOpen(false)}>
 						Inicio
 					</Link>
 					<Link
 						href="/historia"
-						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
+						className="header__nav__item__movil font-poppinsLight cursor-pointer w-full bg-blue hover:bg-principal hover:text-white"
 						onClick={() => setIsMenuOpen(false)}>
 						Historia
 					</Link>
 					<Link
 						href="/proyectos"
-						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
+						className="header__nav__item__movil font-poppinsLight cursor-pointer w-full bg-blue hover:bg-principal hover:text-white"
 						onClick={() => setIsMenuOpen(false)}>
 						Proyectos
 					</Link>
 					<Link
 						href="/contacto"
-						className="header__nav__movil__item font-poppinsLight cursor-pointer w-full p-3 block"
+						className="header__nav__item__movil font-poppinsLight cursor-pointer w-full bg-blue hover:bg-principal hover:text-white"
 						onClick={() => setIsMenuOpen(false)}>
 						Contacto
 					</Link>

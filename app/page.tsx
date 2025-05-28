@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Button from '../components/Button';
 
@@ -17,6 +18,11 @@ import Project5 from '../assets/img/card-5.png';
 import Project6 from '../assets/img/card-6.png';
 
 export default function Home() {
+	const router = useRouter();
+
+	const handleProjectClick = () => {
+		router.push(`/proyecto/${1}`);
+	};
 
 	return (
 		<div>
@@ -38,19 +44,19 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className='banner-secondary w-screen bg-cover bg-center pt-[900px] -mt-[600px] pb-20'>
+			<div className='banner-secondary w-screen bg-cover bg-center pt-10 md:pt-[100px] lg:pt-[900px] mt-4 md:mt-10 lg:-mt-[600px] pb-20'>
 				<div className='home__content'>
-					<div className='w-[660px] mx-auto text-center mb-[450px]'>
+					<div className='w-full md:w-[660px] mx-auto text-center mb-28 lg:mb-[450px]'>
 						<h2 className='titles text-black uppercase font-playfair'>Inversión inteligente, plusvalía y diseño exclusivo.</h2>
 						<p className='subtitles text-black font-playfair mb-8'>Conoce nuestros proyectos</p>
 						<Button text='Contáctanos' type='primary' position='center' />
 					</div>
-					<div className='w-full flex items-center justify-between'>
+					<div className='w-full lg:flex items-center justify-between'>
 						<div>
-							<Image src={Images1} alt="" className='w-[600px] mb-10' />
-							<Image src={Images2} alt="" className='w-[600px]' />
+							<Image src={Images1} alt="" className='w-[600px] mb-10 mx-auto lg:mx-0' />
+							<Image src={Images2} alt="" className='w-[600px] mx-auto lg:mx-0' />
 						</div>
-						<div className='w-full max-w-[515px] text-right'>
+						<div className='w-full max-w-[515px] text-center lg:text-right mx-auto lg:mx-0 mt-10 lg:mt-0'>
 							<h3 className='titles text-black uppercase font-playfair'>¿Quiénes Somos?</h3>
 							<h4 className='subtitles text-black font-playfair mb-8'>Construimos más que espacios,<br /> creamos lugares donde los sueños<br /> encuentran su lugar.</h4>
 							<p className='text-info text-black font-poppins'>
@@ -76,14 +82,14 @@ export default function Home() {
 						<div className='mt-20'>
 							<h4 className='subtitles text-black font-playfair mb-8'>Explora nuestros desarrollos</h4>
 							<h3 className='titles text-black font-playfair'>Nuestros proyectos, <br />más que espacios, son escenarios para nuevas historias</h3>
-							<div className='flex items-center mt-10 gap-4'>
-								<div className='font-poppins rounded-full border border-black px-8 py-4 cursor-pointer hover:bg-black hover:text-white transition-all duration-300'>
+							<div className='md:flex items-center mt-10 gap-4'>
+								<div className='mb-4 md:mb-0 font-poppins rounded-full border border-black px-8 py-4 cursor-pointer hover:bg-black hover:text-white transition-all duration-300'>
 									<p>Filtro 1</p>
 								</div>
-								<div className='font-poppins rounded-full border border-black px-8 py-4 cursor-pointer hover:bg-black hover:text-white transition-all duration-300'>
+								<div className='mb-4 md:mb-0 font-poppins rounded-full border border-black px-8 py-4 cursor-pointer hover:bg-black hover:text-white transition-all duration-300'>
 									<p>Filtro 2</p>
 								</div>
-								<div className='font-poppins rounded-full border border-black px-8 py-4 cursor-pointer hover:bg-black hover:text-white transition-all duration-300'>
+								<div className='mb-4 md:mb-0 font-poppins rounded-full border border-black px-8 py-4 cursor-pointer hover:bg-black hover:text-white transition-all duration-300'>
 									<p>Filtro 3</p>
 								</div>
 							</div>
@@ -93,101 +99,101 @@ export default function Home() {
 			</div>
 
 			<div className='projects w-screen'>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
+				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-4 md:px-10">
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project1} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
-							<h3 className="subtitles text-black text-center font-playfair mb-6">Arcángel Distrito Residencial</h3>
+						<Image src={Project1} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
+							<h3 className="subtitles text-black text-center font-playfair mb-4">Arcángel Distrito Residencial</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
 								semiprivados, distribuidos en 3 niveles de 50m2, cerca de escuelas,
 								iglesia, centro, ...
 							</p>
-							<a href="#" className="text-info text-black font-poppins">
+							<a href="#" className="flex gap-2 hover:gap-4 text-info text-black font-poppins transition-all duration-300" onClick={() => handleProjectClick()}>
 								VER MÁS <span>→</span>
 							</a>
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project2} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project2} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
 								semiprivados, distribuidos en 3 niveles de 50m2, cerca de escuelas,
 								iglesia, centro, ...
 							</p>
-							<a href="#" className="text-info text-black font-poppins">
+							<a href="#" className="flex gap-2 hover:gap-4 text-info text-black font-poppins transition-all duration-300" onClick={() => handleProjectClick()}>
 								VER MÁS <span>→</span>
 							</a>
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project3} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project3} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
 								semiprivados, distribuidos en 3 niveles de 50m2, cerca de escuelas,
 								iglesia, centro, ...
 							</p>
-							<a href="#" className="text-info text-black font-poppins">
+							<a href="#" className="flex gap-2 hover:gap-4 text-info text-black font-poppins transition-all duration-300" onClick={() => handleProjectClick()}>
 								VER MÁS <span>→</span>
 							</a>
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project4} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project4} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
 								semiprivados, distribuidos en 3 niveles de 50m2, cerca de escuelas,
 								iglesia, centro, ...
 							</p>
-							<a href="#" className="text-info text-black font-poppins">
+							<a href="#" className="flex gap-2 hover:gap-4 text-info text-black font-poppins transition-all duration-300" onClick={() => handleProjectClick()}>
 								VER MÁS <span>→</span>
 							</a>
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project5} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project5} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
 								semiprivados, distribuidos en 3 niveles de 50m2, cerca de escuelas,
 								iglesia, centro, ...
 							</p>
-							<a href="#" className="text-info text-black font-poppins">
+							<a href="#" className="flex gap-2 hover:gap-4 text-info text-black font-poppins transition-all duration-300" onClick={() => handleProjectClick()}>
 								VER MÁS <span>→</span>
 							</a>
 						</div>
 					</div>
 					<div className='projects__item mx-auto relative'>
-						<Image src={Project6} alt="" className='w-full h-[500px] object-cover' />
-						<div className="projects__text bg-blue mx-auto px-12 py-6">
+						<Image src={Project6} alt="" className='w-full h-[300px] md:h-[500px] object-cover' />
+						<div className="projects__text bg-blue mx-auto px-4 md:px-8 py-6">
 							<h3 className="subtitles text-black text-center font-playfair mb-6">Bik Independencia</h3>
 							<p className="text-info text-black mb-2 font-poppins">
 								BIK Independencia es un conjunto de 6 departamentos céntricos,
 								semiprivados, distribuidos en 3 niveles de 50m2, cerca de escuelas,
 								iglesia, centro, ...
 							</p>
-							<a href="#" className="text-info text-black font-poppins">
+							<a href="#" className="flex gap-2 hover:gap-4 text-info text-black font-poppins transition-all duration-300" onClick={() => handleProjectClick()}>
 								VER MÁS <span>→</span>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div className='w-[660px] mx-auto text-center my-20'>
+				<div className='w-full md:w-[660px] mx-auto text-center my-20'>
 					<Button text='Ver más' type='primary' position='center' />
 				</div>
 			</div>
 
 			<div className='pb-20'>
 				<div className='home__content'>
-					<div className='w-full flex items-center justify-between'>
-						<div className='w-full max-w-[515px] text-left'>
+					<div className='w-full lg:flex items-center justify-between'>
+						<div className='w-full max-w-[515px] text-center lg:text-left mx-auto lg:mx-0'>
 							<h4 className='subtitles text-black font-playfair mb-6'>Lo hacemos posible, lo hacemos contigo</h4>
 							<h3 className='titles text-black font-playfair'>Más que servicios, somos aliados en cada etapa de tu proyecto.</h3>
 							<div className='mt-10'>
@@ -199,7 +205,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div>
-							<Image src={Images3} alt="" className='w-[600px] mb-10' />
+							<Image src={Images3} alt="" className='w-[600px] mb-10 mx-auto lg:mx-0 mt-10 lg:mt-0' />
 						</div>
 					</div>
 				</div>

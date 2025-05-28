@@ -14,19 +14,19 @@ const Nosotros = () => {
 		<div className='mt-[80px]'>
 			<div className='banner-history w-screen bg-cover bg-center pt-[150px] pb-20'>
 				<div className='home__content'>
-					<div className='w-[500px] mx-auto text-center mb-20'>
+					<div className='w-full lg:w-[500px] mx-auto text-center mb-20'>
 						<h2 className='titles text-black uppercase font-playfair'>espacios e ideas que perduran en el tiempo</h2>
 						<p className='subtitles text-black font-playfair'>Sobre nuestra historia</p>
 					</div>
-					<div className='w-full flex items-center justify-between'>
+					<div className='w-full lg:flex items-center justify-between'>
 						<div>
-							<Image src={Images1} alt="" className='w-[430px] mb-10 ml-10' />
-							<div className='flex gap-4'>
-								<Image src={Images2} alt="" className='w-[364px] mb-10' />
-								<Image src={Images3} alt="" className='w-[215px] mb-10' />
+							<Image src={Images1} alt="" className='w-[430px] mb-10 mx-auto lg:ml-10' />
+							<div className='flex gap-4 justify-center lg:justify-start'>
+								<Image src={Images2} alt="" className='w-[200px] sm:w-[364px] mb-10' />
+								<Image src={Images3} alt="" className='w-[100px] sm:w-[215px] mb-10' />
 							</div>
 						</div>
-						<div className='w-full max-w-[535px] text-right'>
+						<div className='w-full max-w-[535px] text-center lg:text-right mx-auto lg:mx-0 mt-20 lg:mt-0'>
 							<h3 className='titles text-black uppercase font-playfair'>SOMOS HERSA</h3>
 							<h4 className='subtitles text-black font-playfair mb-8'>
 								Empresa mexicana con más de 15 años de experiencia, consolidados
@@ -47,9 +47,9 @@ const Nosotros = () => {
 				</div>
 			</div>
 
-			<div className='banner-image w-screen bg-cover bg-center p-10 flex justify-center items-center'>
+			<div className='banner-image w-screen bg-cover bg-center p-4 lg:p-10 flex justify-center items-center'>
 				<div className='home__content'>
-					<h4 className='text-center text-white font-playfair text-[47px] max-w-[760px] mx-auto font-light leading-[99%]'>
+					<h4 className='text-center text-white font-playfair text-[28px] lg:text-[47px] max-w-[760px] mx-auto font-light leading-[99%]'>
 						En HERSA, la calidad no es solo una promesa,
 						es un principio rector que guía cada etapa
 						de nuestro proceso.
@@ -58,12 +58,12 @@ const Nosotros = () => {
 			</div>
 
 			<div className='pb-20'>
-				<div className='w-[660px] mx-auto text-center my-[100px]'>
+				<div className='w-full lg:w-[660px] mx-auto text-center my-[100px]'>
 					<Button text='Ver más' type='primary' position='center' />
 				</div>
 				<div className='home__content'>
-					<div className='w-full flex items-center justify-between'>
-						<div className='w-full max-w-[515px] text-left'>
+					<div className='w-full lg:flex items-center justify-between'>
+						<div className='w-full max-w-[515px] text-center lg:text-left mx-auto lg:mx-0'>
 							<h4 className='subtitles text-black font-playfair mb-6'>Lo hacemos posible, lo hacemos contigo</h4>
 							<h3 className='titles text-black font-playfair'>Calidad y Satisfacción</h3>
 							<div className='mt-10'>
@@ -82,17 +82,17 @@ const Nosotros = () => {
 							</div>
 						</div>
 						<div>
-							<Image src={Images4} alt="" className='w-[600px] mb-10' />
+							<Image src={Images4} alt="" className='w-[250px] sm:w-[600px] mb-10 mx-auto lg:mx-0 mt-10 lg:mt-0' />
 						</div>
 					</div>
 				</div>
 
 			</div>
 
-			<div className='banner-image--second w-screen bg-cover bg-center p-10 flex justify-center items-center'>
+			<div className='banner-image--second w-screen bg-cover bg-center p-4 lg:p-10 flex justify-center items-center'>
 				<div className='home__content'>
 					<Image src={Logo} alt="Logo" className='w-[322px] mx-auto mb-10' />
-					<h4 className='text-center text-white font-playfair text-[47px] max-w-[760px] mx-auto font-light leading-[99%]'>
+					<h4 className='text-center text-white font-playfair text-[28px] lg:text-[47px] max-w-[760px] mx-auto font-light leading-[99%]'>
 						Líderes en soluciones <br />arquitectónicas
 					</h4>
 				</div>
@@ -100,7 +100,7 @@ const Nosotros = () => {
 
 			<div className='w-screen bg-cover bg-center py-20'>
 				<div className='home__content'>
-					<div className='w-[550px] mx-auto text-center mb-4'>
+					<div className='w-full lg:w-[550px] mx-auto text-center mb-4'>
 						<h2 className='titles text-black uppercase font-playfair'>Objetivo</h2>
 						<p className='subtitles text-black font-playfair mb-8'>
 							Nuestro objetivo es claro: continuar siendo
@@ -127,7 +127,7 @@ const Nosotros = () => {
 
 			<div className='team w-screen'>
 				<div className='home__content'>
-					<div className='w-[750px] mx-auto text-center mb-20'>
+					<div className='w-full lg:w-[750px] mx-auto text-center mb-20'>
 						<h2 className='titles text-black uppercase font-playfair'>Equipo de trabajo</h2>
 						<p className='subtitles text-black font-playfair mb-8'>
 							Nuestro equipo es la fuerza que da vida a cada proyecto,
@@ -135,8 +135,8 @@ const Nosotros = () => {
 						</p>
 					</div>
 				</div>
-				<div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-16 border-t border-b border-black">
-					<div className='teams__item relative w-[320px]'>
+				<div className="home__content mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-y-4 xl:gap-y-16 xl:border-t xl:border-b border-black">
+					<div className='teams__item relative xl:w-[320px]'>
 						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
 						<div className="team__text text-center p-4">
 							<p className="text-info text-black font-poppins">
@@ -147,7 +147,7 @@ const Nosotros = () => {
 							</h3>
 						</div>
 					</div>
-					<div className='teams__item relative w-[320px] border-l border-black'>
+					<div className='teams__item relative xl:w-[320px] border-l border-black'>
 						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
 						<div className="team__text text-center p-4">
 							<p className="text-info text-black font-poppins">
@@ -158,7 +158,7 @@ const Nosotros = () => {
 							</h3>
 						</div>
 					</div>
-					<div className='teams__item relative w-[320px] border-r border-l border-black '>
+					<div className='teams__item relative xl:w-[320px] border-r border-l border-black '>
 						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
 						<div className="team__text text-center p-4">
 							<p className="text-info text-black font-poppins">
@@ -169,7 +169,7 @@ const Nosotros = () => {
 							</h3>
 						</div>
 					</div>
-					<div className='teams__item relative w-[320px]'>
+					<div className='teams__item relative xl:w-[320px]'>
 						<div className='bg-gray w-[255px] h-[300px] mx-auto'></div>
 						<div className="team__text text-center p-4">
 							<p className="text-info text-black font-poppins">

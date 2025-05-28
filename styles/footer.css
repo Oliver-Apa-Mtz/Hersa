@@ -2,6 +2,12 @@
 	padding: 100px 0;
 	background: linear-gradient(180deg, #1C4B89 0%, #6E849A 66.16%, #6E849A 100%);
 }
+.footer__content {
+	width: 100%;
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 .footer__title{
 	font-weight: 300;
 	font-size: 46px;
@@ -15,4 +21,22 @@
 .footer__item__social:hover{
 	background-color: white;
 	color: #060606;
+}
+@media only screen and (max-width: 1023px) {
+	.footer {
+		padding: 50px 0;
+	}
+	.footer__title{
+		font-size: 30px;
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 40px;
+	}
+	.footer__info{
+		width: 100%;
+		max-width: 290px;
+		margin: 0 auto;
+	}
 }
