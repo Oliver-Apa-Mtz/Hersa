@@ -26,6 +26,14 @@ body {
 	padding: 15px 20px;
 	min-width: 250px;
 }
+.button--secondary{
+	background-color: var(--white);
+	color: #1C4B89;
+}
 .button:hover{
 	background-color: #262626;
+}
+.button--secondary:hover {
+	background-color: #1C4B89;
+		color: var(--white);
 }

@@ -25,25 +25,25 @@ const Proyectos = () => {
 					<div className="w-full max-w-[1340px] mx-auto px-4 py-6">
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 							<div className="flex flex-col gap-2">
-								<label className="text-info text-black font-poppins'">Tipo de residencia</label>
+								<label className="text-info text-black font-poppins">Tipo de residencia</label>
 								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>Todos los tipos</option>
 								</select>
 							</div>
 							<div className="flex flex-col gap-2">
-								<label className="text-info text-black font-poppins'">Venta / Renta</label>
+								<label className="text-info text-black font-poppins">Venta / Renta</label>
 								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>50,000 - $150,000</option>
 								</select>
 							</div>
 							<div className="flex flex-col gap-2">
-								<label className="text-info text-black font-poppins'">Precio</label>
+								<label className="text-info text-black font-poppins">Precio</label>
 								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>50,000 - $150,000</option>
 								</select>
 							</div>
 							<div className="flex flex-col gap-2">
-								<label className="text-info text-black font-poppins'">Zona</label>
+								<label className="text-info text-black font-poppins">Zona</label>
 								<select className="w-full border border-blue rounded-lg px-4 py-2 bg-transparent text-info text-black font-poppins focus:outline-none cursor-pointer hover:bg-blue hover:border-black">
 									<option>Jakarta, Indonesia</option>
 								</select>
