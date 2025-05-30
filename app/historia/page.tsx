@@ -11,7 +11,7 @@ const Nosotros = () => {
 
 
 	return (
-		<div className='mt-[80px]'>
+		<div className='mt-[80px] bgPpalCream'>
 			<div className='banner-history w-screen bg-cover bg-center pt-[150px] pb-20'>
 				<div className='home__content'>
 					<div className='w-full lg:w-[500px] mx-auto text-center mb-20'>

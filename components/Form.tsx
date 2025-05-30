@@ -1,8 +1,12 @@
 import Button from './Button';
 
-const Form = () => {
+type FormProps = {
+	bgColor?: string
+}
+
+const Form = ({ bgColor = 'white' }: FormProps) => {
 	return (
-		<div className='w-full bg-white p-4 lg:p-20'>
+		<div className={`w-full ${bgColor === 'gray' ? 'form--Gray' : 'bg-white'} p-4 lg:p-20`}>
 			<div className="w-full mx-auto">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
 					<div>
@@ -10,7 +14,7 @@ const Form = () => {
 						<input
 							type="text"
 							placeholder="Escribe tu nombre"
-							className="w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
+							className="bg-transparent w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
 						/>
 					</div>
 					<div>
@@ -18,7 +22,7 @@ const Form = () => {
 						<input
 							type="email"
 							placeholder="Escribe tu mail"
-							className="w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
+							className="bg-transparent w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
 						/>
 					</div>
 					<div>
@@ -26,7 +30,7 @@ const Form = () => {
 						<input
 							type="tel"
 							placeholder="Escribe tu teléfono"
-							className="w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
+							className="bg-transparent w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
 						/>
 					</div>
 					<div>
@@ -34,7 +38,7 @@ const Form = () => {
 						<input
 							type="text"
 							placeholder="Nombre de la empresa"
-							className="w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
+							className="bg-transparent w-full border-b-2 border-black text-info text-black font-poppins focus:outline-none placeholder-gray-400 py-2"
 						/>
 					</div>
 				</div>
@@ -43,7 +47,7 @@ const Form = () => {
 					<textarea
 						rows={2}
 						placeholder=""
-						className="w-full border-b-2 border-black focus:outline-none placeholder-gray-400 resize-none text-info text-black font-poppins py-2"
+						className={`bg-transparent w-full border-b-2 border-black focus:outline-none placeholder-gray-400 resize-none text-info text-black font-poppins py-2`}
 					></textarea>
 				</div>
 			</div>

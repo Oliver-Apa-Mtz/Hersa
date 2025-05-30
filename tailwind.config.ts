@@ -14,6 +14,7 @@ const config: Config = {
 				cream: "#F6EFE9",
 				blue: "#A7B6C5",
 				gray: "#C4C4C4",
+				graySecondary: "#f4f4f4",
 			},
 			fontFamily: {
 				playfair: ["var(--font-playfair)"],

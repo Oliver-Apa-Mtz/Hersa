@@ -21,7 +21,7 @@ const Proyecto = () => {
 
 
 	return (
-		<div className='mt-[80px]'>
+		<div className='mt-[80px] bgPpalCream'>
 			<div className='banner-proyectos w-screen bg-cover bg-center pt-[100px]'>
 				<div className='home__content'>
 					<div className='mb-10'>
@@ -262,7 +262,7 @@ const Proyecto = () => {
 				</div>
 			</div>
 
-			<div className='w-screen bg-cover bg-center pt-[150px] pb-20 mb-10 lg:mb-[200px]'>
+			<div className='w-screen bg-cover bg-center pt-[150px] pb-20 lg:pb-[280px]'>
 				<div className='home__content'>
 					<div className='w-full lg:w-[750px] mx-auto text-center mb-20'>
 						<h2 className='titles text-black uppercase font-playfair'>¿Algo en mente? hablemos</h2>

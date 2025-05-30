@@ -102,11 +102,27 @@
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 200px 0;
-	margin: 50px 0;
+	padding: 250px 0;
 }
 .contact{
 	background-image: url('../assets/img/contacto.png');
+}
+.banner-patrocinio{
+	background-image: url('../assets/img/banner-patrocinio.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+}
+.banner-proveedores{
+	background-image: url('../assets/img/banner-proveedores.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+}
+.form--Gray {
+	background-color: #f4f4f4;
 }
 
 @media only screen and (max-width: 1279px) {

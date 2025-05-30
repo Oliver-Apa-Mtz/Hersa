@@ -21,10 +21,22 @@ const Footer = () => {
 						En Hersa corporativo construimos realidades
 					</p>
 					<div className="flex flex-wrap gap-4 text-sm uppercase tracking-widest font-light mt-10 justify-center lg:justify-start">
-						<a href="#" className="hover:underline font-poppins">PATROCINIOS</a>
-						<a href="#" className="hover:underline font-poppins">PROVEEDORES</a>
+						<Link
+							href="/patrocinios"
+							className="hover:underline font-poppins">
+							PATROCINIOS
+						</Link>
+						<Link
+							href="/proveedores"
+							className="hover:underline font-poppins">
+							PROVEEDORES
+						</Link>
 						<a href="#" className="hover:underline font-poppins">NOTICIAS</a>
-						<a href="#" className="hover:underline font-poppins">BOLSA DE TRABAJO</a>
+						<Link
+							href="/trabajo"
+							className="hover:underline font-poppins">
+							BOLSA DE TRABAJO
+						</Link>
 					</div>
 				</div>
 				<div>
