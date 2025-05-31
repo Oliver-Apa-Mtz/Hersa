@@ -26,7 +26,6 @@ const poppinsLight = localFont({
 	display: 'swap',
 })
 
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ReduxProvider from '../components/ReduxProvider';
