@@ -40,12 +40,6 @@ import Images7 from '../../../assets/img/images-12.png';
 import Images8 from '../../../assets/img/images-13.png';
 import Images9 from '../../../assets/img/images-14.png';
 
-const images = [
-	Images1.src,
-	Images2.src,
-	Images3.src
-];
-
 const Proyecto = () => {
 	const [isMobile, setIsMobile] = useState(false);
 	const [isVisible, setIsVisible] = useState(false);
@@ -163,15 +157,35 @@ const Proyecto = () => {
 									className='w-full md:w-[660px] object-cover cursor-pointer'
 									onClick={() => {
 										setIsOpen(true);
-									}
-									} />
+									}}
+								/>
 								<div className="flex flex-nowrap md:flex-wrap gap-4 relative">
 									<div className='w-[50%] md:w-auto'>
-										<Image src={Images2} alt="" className='w-full md:w-[600px] object-cover' />
+										<Image
+											src={Images2}
+											alt=""
+											className='w-full md:w-[600px] object-cover cursor-pointer'
+											onClick={() => {
+												setIsOpen(true);
+											}}
+										/>
 									</div>
 									<div className='w-[50%] md:w-auto'>
-										<Image src={Images3} alt="" className='w-full md:w-[200px] lg:w-[300px] xl:w-[410px] object-cover' />
-										<div className="relative md:absolute bottom-[20px] lg:bottom-[70px] right-10 text-black text-[80px] font-playfair">10+</div>
+										<Image src={Images3}
+											alt=""
+											className='w-full md:w-[200px] lg:w-[300px] xl:w-[410px] object-cover cursor-pointer'
+											onClick={() => {
+												setIsOpen(true);
+											}}
+										/>
+										<div
+											className="relative md:absolute bottom-[20px] lg:bottom-[70px] right-10 text-black text-[80px] font-playfair cursor-pointer"
+											onClick={() => {
+												setIsOpen(true);
+											}}
+										>
+											10+
+										</div>
 									</div>
 								</div>
 							</div>
@@ -521,7 +535,6 @@ const Proyecto = () => {
 			<ModalSlider
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
-				images={images}
 			/>
 
 		</div>
