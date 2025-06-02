@@ -46,22 +46,22 @@ const Header = () => {
 				<div className="header__nav">
 					<Link
 						href="/"
-						className={`header__nav__item text-white font-poppinsLight ${pathname === '/' ? 'active' : ''}`}>
+						className={`header__nav__item border-b-2 border-transparent hover:border-white text-white font-poppinsLight ${pathname === '/' ? 'active' : ''}`}>
 						Inicio
 					</Link>
 					<Link
 						href="/historia"
-						className={`header__nav__item text-white font-poppinsLight ${pathname === '/historia' ? 'active' : ''}`}>
+						className={`header__nav__item border-b-2 border-transparent hover:border-white text-white font-poppinsLight ${pathname === '/historia' ? 'active' : ''}`}>
 						Historia
 					</Link>
 					<Link
 						href="/proyectos"
-						className={`header__nav__item text-white font-poppinsLight ${pathname === '/proyectos' ? 'active' : ''}`}>
+						className={`header__nav__item border-b-2 border-transparent hover:border-white text-white font-poppinsLight ${pathname === '/proyectos' ? 'active' : ''}`}>
 						Proyectos
 					</Link>
 					<Link
 						href="/contacto"
-						className={`header__nav__item text-white font-poppinsLight ${pathname === '/contacto' ? 'active' : ''}`}>
+						className={`header__nav__item border-b-2 border-transparent hover:border-white text-white font-poppinsLight ${pathname === '/contacto' ? 'active' : ''}`}>
 						Contacto
 					</Link>
 				</div>

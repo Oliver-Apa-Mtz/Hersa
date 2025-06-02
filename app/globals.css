@@ -37,3 +37,6 @@
 	background-color: #1C4B89;
 		color: var(--white);
 }
+.slick-dots li button::before{
+	font-size: 10px !important;
+}

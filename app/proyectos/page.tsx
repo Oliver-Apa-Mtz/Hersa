@@ -33,7 +33,7 @@ const Proyectos = () => {
 	});
 	const animationPropsBanner2 = useSpring({
 		opacity: isVisibleBanner2 ? 1 : 0,
-		transform: isVisible ? 'translateY(0)' : 'translateY(100px)',
+		transform: isVisibleBanner2 ? 'translateY(0)' : 'translateY(100px)',
 		delay: 200,
 	});
 	const animationPropsBanner3 = useSpring({
@@ -79,7 +79,7 @@ const Proyectos = () => {
 
 	return (
 		<div className='mt-[80px] bgPpalCream'>
-			<div className='banner-proyectos w-screen bg-cover bg-center pt-[150px] pb-20'>
+			<div className='banner-proyectos w-screen bg-cover bg-center pt-10 lg:pt-[150px] pb-20'>
 				<div className='home__content'>
 					<div className='w-full lg:w-[690px] mb-20'>
 						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">

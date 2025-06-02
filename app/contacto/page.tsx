@@ -18,7 +18,7 @@ const Contacto = () => {
 	});
 	const animationPropsBanner2 = useSpring({
 		opacity: isVisibleBanner2 ? 1 : 0,
-		transform: isVisible ? 'translateY(0)' : 'translateY(100px)',
+		transform: isVisibleBanner2 ? 'translateY(0)' : 'translateY(100px)',
 		delay: 300,
 	});
 
